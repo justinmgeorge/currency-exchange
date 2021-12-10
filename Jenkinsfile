@@ -35,7 +35,7 @@ pipeline {
 		    steps {
 			    sh 'whoami'
 			    script {
-				    myimage = docker.build("justinmgeorgedocker/curr-exchange:${env.BUILD_ID}")
+				    myimage = docker.build("justinmgeorgedocker/currexchange:${env.BUILD_ID}")
 			    }
 		    }
 	    }
