@@ -11,6 +11,7 @@
 	<groupId>com.in28minutes.microservices</groupId>
 	<artifactId>currency-exchange-service</artifactId>
 	<version>0.0.14-SNAPSHOT</version> <!-- CHANGE-KUBERNETES -->
+	<packaging>war</packaging>
 	<name>currency-exchange-service-kubernetes</name> <!-- CHANGE-KUBERNETES -->
 	<description>Demo project for Spring Boot</description>
 
@@ -127,6 +128,7 @@
              <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.1</version>
                 <configuration>
                     <archive>
                         <addMavenDescriptor>false</addMavenDescriptor>
