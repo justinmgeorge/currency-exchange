@@ -40,6 +40,7 @@ public class CurrencyExchangeController {
 		String host = environment.getProperty("HOSTNAME");
 		String version = "v11";
 		logger.info("version is v11");
+		logger.info("current executing for curr-exc");
 		
 		currencyExchange.setEnvironment(port + " " + version + " " + host);
 		
