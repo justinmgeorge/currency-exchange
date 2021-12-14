@@ -5,8 +5,10 @@ import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name ="curr_exhg")
 public class CurrencyExchange {
 	
 	@Id
@@ -17,7 +19,8 @@ public class CurrencyExchange {
 	
 	@Column(name = "currency_to")
 	private String to;
-
+	
+	@Column
 	private BigDecimal conversionMultiple;
 	private String environment;
 
