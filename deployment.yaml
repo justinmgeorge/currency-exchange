@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
- name: myapp
+ name: currency-exchange
  labels:
-  app: myapp
+  app: currency-exchange
 spec:
  replicas: 1
  selector:
   matchLabels:
-   app: myapp
+   app: currency-exchange
  template:
   metadata: 
    labels:
-    app: myapp
+    app: currency-exchange
   spec:
    containers:
-   - name: myapp
+   - name: currency-exchange
      image: justinmgeorgedocker/currexchange:tagversion
      ports:
      - containerPort: 8080
@@ -25,11 +25,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp
+  name: currency-exchange
 spec:
   type: LoadBalancer
   selector:
-    app: myapp
+    app: currency-exchange
   ports:
     - protocol: TCP
       port: 8000
