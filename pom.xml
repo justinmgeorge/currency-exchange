@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.in28minutes.microservices</groupId>
 	<artifactId>currency-exchange-service</artifactId>
-	<version>0.0.14-SNAPSHOT</version> <!-- CHANGE-KUBERNETES -->
+	<version>0.0.15-SNAPSHOT</version> <!-- CHANGE-KUBERNETES -->
 	<packaging>war</packaging>
 	<name>currency-exchange-service-kubernetes</name> <!-- CHANGE-KUBERNETES -->
 	<description>Demo project for Spring Boot</description>
