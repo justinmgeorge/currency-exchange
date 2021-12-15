@@ -28,7 +28,7 @@ spec:
         imagePullPolicy: IfNotPresent
         name: currency-exchange
         ports:
-        - containerPort: 8080
+        - containerPort: 8000
       restartPolicy: Always
 ---
 apiVersion: v1
