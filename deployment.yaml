@@ -45,9 +45,9 @@ spec:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - port: 8080
+  - port: 8000
     protocol: TCP
-    targetPort: 8080
+    targetPort: 8000
   selector:
     app: currency-exchange
   sessionAffinity: None
