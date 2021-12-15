@@ -38,7 +38,7 @@ public class CurrencyExchangeController {
 		
 		//CHANGE-KUBERNETES
 		String host = environment.getProperty("HOSTNAME");
-		String version = "v11";
+		String version = "v15";
 		logger.info("version is v11");
 		logger.info("current executing for curr-exc");
 		
