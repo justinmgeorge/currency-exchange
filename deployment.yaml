@@ -27,6 +27,8 @@ spec:
       - image: justinmgeorgedocker/currexchange:tagversion
         imagePullPolicy: IfNotPresent
         name: mmv5-currency-exchange-service
+        ports:
+        - containerPort: 8080
       restartPolicy: Always
 ---
 apiVersion: v1
@@ -45,7 +47,7 @@ spec:
   ports:
   - port: 8000
     protocol: TCP
-    targetPort: 8000
+    targetPort: 8080
   selector:
     app: currency-exchange
   sessionAffinity: None
