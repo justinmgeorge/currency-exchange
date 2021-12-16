@@ -28,7 +28,7 @@ spec:
         imagePullPolicy: Always
         name: currency-exchange
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
       restartPolicy: Always
 ---
 apiVersion: v1
@@ -45,7 +45,7 @@ spec:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - port: 8000
+  - port: 8080
     protocol: TCP
     targetPort: 8000
   selector:
