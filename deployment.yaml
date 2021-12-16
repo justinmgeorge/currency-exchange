@@ -25,10 +25,10 @@ spec:
     spec:
       containers:
       - image: justinmgeorgedocker/currexchange:tagversion
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         name: currency-exchange
         ports:
-        - containerPort: 8000
+        - containerPort: 8080
       restartPolicy: Always
 ---
 apiVersion: v1
